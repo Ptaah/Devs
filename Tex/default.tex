@@ -1,0 +1,47 @@
+% Created 2010-07-19 lun. 21:16
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage{extsizes}
+
+% Custom Headers
+\marginparwidth=35pt
+\headsep=25pt
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\setlength{\headheight}{15.2pt}
+\fancyhf{}
+\lhead{\fancyplain{}{\titre}}
+\rhead{\fancyplain{}{\today}}
+\lfoot{\fancyplain{}{\moi}}
+\rfoot{\fancyplain{}{\thepage}}
+
+%%
+
+\newcommand{\trace}{\emph{trace\_cmd}}
+\newcommand{\virtfs}{\emph{VirtFS}}
+%\newcommand{\linux}{\emph{L$_I$N$_U$X} }
+\newcommand{\linux}{\emph{Linux}}
+\newcommand{\OpenVZ}{\emph{OpenVZ}}
+\newcommand{\KSM}{\emph{KSM}}
+\newcommand{\moi}{Aurélien Cedeyn}
+
+\author{\moi}
+\date{\today}
+
+\newcommand{\mylogo}[1]{
+  \begin{wrapfigure}{r}{0cm} % "l" or "r" for the side on the page. And the width parameter for the width of the image space.
+    \centering
+    \includegraphics[width=1.5cm]{#1}
+%    \caption{über 1 km Entfernung anzugreifen. (Stand: 2004)}
+%    \label{bluesniper}
+  \end{wrapfigure}
+}
